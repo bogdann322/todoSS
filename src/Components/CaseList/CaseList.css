@@ -1,0 +1,14 @@
+.task-list{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+}
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color:#9da0a6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
