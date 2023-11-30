@@ -1,14 +1,14 @@
 import "./Case.css"
 
-const Case  = ({title, id}) => {
+const Case  = ({title, id, handleDelete, handleUpdate}) => {
     return(
         <div className="task">
             <div className="content">
-                <input type="text" className="text" value={title} id="input2" readOnly />
+                <input type="text" className="text" value={title} readOnly />
             </div>
             <div className="actions">
-                <button className="edit" onclick="updateText('taskEdit2','input2')" id="taskEdit2">Update</button>
-                <button className="delete" onclick="deleteItem('task2')">Delete</button>
+                <button className="edit" onClick = {() => handleUpdate(id, prompt('Enter new text:'))}>Update</button>
+                <button className="delete" onClick={() => handleDelete(id)}>Delete</button>
             </div>
         </div>
     )
