@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './Header.css'
 const Header = ({ todolist, setTodolist }) => {
-	const [taskName, setTaskName] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setTodolist([{title:taskName, id: Date.now()},...todolist])
-    setTaskName('')
-  }
+	//State to adding a new task 
+	const [taskName, setTaskName] = useState('')
+	
+	//Function to adding a new task
+	const handleSubmit = (e) => {
+	e.preventDefault()
+	setTodolist([{title:taskName, id: Date.now()},...todolist])
+	setTaskName('')
+	}
 
 	return (
 		<div className='header'>

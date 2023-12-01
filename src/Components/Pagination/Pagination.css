@@ -1,0 +1,27 @@
+.pagination{
+    text-align: center;
+}
+
+.pagButton, .current{ 
+    margin: 0 10px;
+    border: 1px solid rgb(230, 219, 219);
+    color: rgb(230, 219, 219);
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pagButton:hover, .current:hover{
+    cursor: pointer;
+}
+
+.current{
+    color: red;
+    border: 1px solid red;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  color: #999999;
+}
