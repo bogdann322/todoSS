@@ -6,17 +6,15 @@
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
-
+.content{
+    width: 70%;
+}
 .text{
     color:#EEE;
     font-size: 1.125rem;
     width: 100%;
     display: block;
     transition: 0.4s;
-}
-
-.content{
-    flex: 1 1 0%;
 }
 
 .text:not(:read-only){
@@ -51,4 +49,49 @@ button:hover{
 
 .delete{
     color: crimson;
+}
+
+@media (max-width: 768px) {
+    .task {
+        margin: 1rem 4rem;
+        padding: .7rem;
+    }
+    .text{
+        font-size: .7rem;
+        width: 100%;
+    }
+    .task .actions button{
+        margin: 0 0.5rem;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .task {
+        margin: 1rem;
+        padding: .7rem;
+    }
+    .text{
+        font-size: .7rem;
+        width: 100%;
+    }
+    .task .actions button{
+        margin: 0 0.5rem;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .task {
+        margin: 1rem .5rem;
+        padding: .5rem;
+    }
+    .text{
+        font-size: .5rem;
+        width: 95%;
+    }
+    .task .actions button{
+        margin: 0 0.5rem;
+        font-size: .5rem;
+    }
 }

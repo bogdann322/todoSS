@@ -20,8 +20,34 @@
     border: 1px solid red;
 }
 
-button:disabled,
-button[disabled]{
+button:disabled{
   border: 1px solid #999999;
   color: #999999;
+}
+
+@media (max-width: 768px) {
+    .pagButton, .current{ 
+        margin: 0 5px;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagButton, .current{ 
+        margin: 0 2px;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .pagButton, .current{ 
+        margin: 0 3px;
+        padding: 4px;
+        font-weight: bold;
+        font-size: 7px;
+    }
 }
